@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Front-end Development</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/D66_logo.svg" alt="Logo D66"></a>
+            <ul id="myLinks">
+                <li><a href="#">Wat vindt D66</a></li>
+                <li><a href="#">Onze mensen</a></li>
+                <li><a href="#">De partij</a></li>
+                <li><a href="#">Verkiezingsprogramma</a></li>
+                <li><a href="#">Agenda</a></li>
+                <li><a href="#">Nieuws</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <p>Menu
+                    <i class="fa fa-bars"></i>
+                </p>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <h1>Nieuwe energie voor Nederland.</h1>
+            <img src="images/robjetten-D66.jpg" alt="Rob Jetten Lijsttrekker D66">
+            <h2>Bekijk de plannen van D66 voor...</h2>
+        </section>
+    </main>
+
+    <!-- Script for Top Navigation Menu  -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

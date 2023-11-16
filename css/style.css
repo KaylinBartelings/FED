@@ -1,0 +1,93 @@
+:root {
+    --main-bg-color: #9D8FC4;
+}
+
+@font-face {
+    font-family: InterRegular;
+    src: url(../fonts/Inter-Regular.latin.woff2);
+    font-weight: regular;
+}
+
+@font-face {
+    font-family: InterMedium;
+    src: url(../fonts/Inter-Medium.latin.woff2);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: InterBold;
+    src: url(../fonts/Inter-Bold-latin.woff2);
+    font-weight: medium;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+/* Style the navigation menu */
+nav {
+    overflow: hidden;
+    position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+nav ul {
+    display: none;
+}
+
+nav img {
+    max-height: 4em;
+    width: auto;
+    height: 100%;
+}
+
+/* Style navigation */
+nav a {
+    color: white;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    width: 7.5em;
+    height: 3em;
+    border-radius: 0.625em;
+    font-family: InterRegular;
+}
+
+nav ul {
+    list-style: none;
+    background-color: aqua;
+    padding: 0;
+}
+
+nav ul li a {
+    color: black;
+}
+
+/* Style the hamburger menu */
+nav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.625em;
+}
+
+section h1 {
+    font-size: 4em;
+    line-height: 1;
+    text-align: center;
+    font-family: InterBold;
+}
