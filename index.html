@@ -13,21 +13,16 @@
 
 <body>
     <header>
+        <a href="#">CSS Nav</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <nav>
-            <a href="index.html"><img src="images/D66_logo.svg" alt="Logo D66"></a>
-            <ul id="myLinks">
-                <li><a href="#">Wat vindt D66</a></li>
-                <li><a href="#">Onze mensen</a></li>
-                <li><a href="#">De partij</a></li>
-                <li><a href="#">Verkiezingsprogramma</a></li>
-                <li><a href="#">Agenda</a></li>
-                <li><a href="#">Nieuws</a></li>
+            <ul class="menu">
+                <li><a href="#work">Our Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <p>Menu
-                    <i class="fa fa-bars"></i>
-                </p>
-            </a>
         </nav>
     </header>
 
@@ -35,12 +30,32 @@
         <section class="intro-section">
             <h1>Nieuwe energie voor Nederland.</h1>
             <img src="images/robjetten-D66.jpg" alt="Rob Jetten Lijsttrekker D66">
-            <h2>Bekijk de plannen van D66 voor...</h2>
+        </section>
+
+        <section class="question">
+            <p>1 / 2</p>
+            <h3>Bekijk de plannen van D66 voor...</h3>
+            <ul>
+                <li>Klimaat, natuur en milieu</li>
+                <li>Onderwijs en Wetenschap</li>
+                <li>Zorg en gezondheid</li>
+                <li>Wonen</li>
+                <li>Werk en inkomen</li>
+                <li>Democratie en overheid</li>
+                <li>Ondernemen en innoveren</li>
+                <li>Europa en internationaal</li>
+                <li>Intergatie en immigratie</li>
+                <li>Media en cultuur</li>
+                <li>Vrij zijn</li>
+                <li>Ruimte en bereikbaarheid</li>
+
+
+            </ul>
         </section>
     </main>
 
     <!-- Script for Top Navigation Menu  -->
-    <script>
+    <!-- <script>
         function myFunction() {
             var x = document.getElementById("myLinks");
             if (x.style.display === "block") {
@@ -49,8 +64,11 @@
                 x.style.display = "block";
             }
         }
-    </script>
 
+        
+    </script> -->
+
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
