@@ -86,19 +86,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het selecteren van een site die ik wilde nabouwen vergde wat tijd, aangezien ik een "mooie" site wilde kiezen. Mijn initiële overweging was om een website te kiezen die bekroond was met een Awwward, maar deze bleken vaak te complex voor mijn vaardigheidsniveau. Niettemin vond ik het belangerijk en leuk om een site te kiezen waarmee ik creatief kon omgaan met de surface plane, omdat ik mijn expertise op dat gebied wil uitbreiden.
+
+  Wat betreft de voortgang in het schrijven van semantisch correcte code, ben ik tot nu toe tevreden. Ik leer steeds nieuwe en verbeterde manieren om code op een correcte manier te structureren en te schrijven. Het leren van op een nieuwe manier is uitdagend maar ik denk wel veel te leren over toegankelijkheid.
+
+  Het belang van semantisch correcte code wordt steeds duidelijker voor mij, omdat het ervoor zorgt dat de website niet alleen visueel aantrekkelijk is, maar ook begrijpelijk voor verschillende gebruikers, inclusief degenen die afhankelijk zijn van schermlezers of andere hulpmiddelen voor toegankelijkheid.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Kaylin Noella Bartelings  student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  |semantische     |
-  |correct geschreven| en dit             | en ik dit    | en dan ik dat    |
-  |html code       | dit als er tijd is | nog een punt | dit wil ik zeker |
-  |                | ...                | ...          | ...              |
+  | Kaylin Noella Bartelings 
+  |semantische correct geschreven html code
 
+  |Sander
+  |semantische correct geschreven html code
+
+  |Diya
+  |semantische correct geschreven html code
+
+  |Insa
+  |semantische correct geschreven html code
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
