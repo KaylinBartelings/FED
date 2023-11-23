@@ -22,11 +22,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw/rood
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Ik wil mij foccusen op de surface plane.
  
 </details>
-
-
 
 
 
@@ -94,11 +92,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Kaylin Noella Bartelings  student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  |semantische     |
+  |correct geschreven| en dit             | en ik dit    | en dan ik dat    |
+  |html code       | dit als er tijd is | nog een punt | dit wil ik zeker |
+  |                | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
