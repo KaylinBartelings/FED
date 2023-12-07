@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/mainstyle.css">
+
 
     <title>Front-end Development</title>
 </head>
@@ -25,37 +26,69 @@
     </header>
 
     <main>
-        <section>
+        <section class="hero">
             <h1>Nieuwe energie voor Nederland.</h1>
-            <img src="images/robjetten-D66.jpg" alt="Rob Jetten Lijsttrekker D66">
+            <img src="images/robjetten.jpg" alt="Rob Jetten Lijsttrekker D66">
+            <!-- <video controls>
+                <source src="mp4/D66_Campagne_video.mp4" type="video/mp4" />
+              </video> -->
+
         </section>
 
         <section>
             <h2>Bekijk de plannen van D66 voor...</h2>
-            <p>1 / 2</p>
+            <p aria-label="vraag 1 van 2">1 / 2</p>
             <form>
                 <fieldset>
                     <legend class="visually-hidden">Plannen</legend>
 
                     <label>
-                        <input type="radio" class="visually-hidden" name="plannen" value="klimaat, natuur en milieu" />
+                        <input type="radio" class="visually-hidden" name="plannen" value="klimaat, natuur en milieu"
+                            required />
                         Klimaat, natuur en milieu</label>
 
                     <label><input type="radio" class="visually-hidden" name="plannen"
-                            value="klimaat, natuur en milieu" />Zorg en
-                        gezondheid</label>
+                            value="klimaat, natuur en milieu" />Onderwijs</label>
 
                     <label><input type="radio" class="visually-hidden" name="plannen"
-                            value="klimaat, natuur en milieu" />Werk en
-                        inkomen</label>
+                            value="klimaat, natuur en milieu" />Zorg en gezondheid</label>
+
+                    <label><input type="radio" class="visually-hidden" name="plannen"
+                            value="klimaat, natuur en milieu" />Wonen</label>
+
+                    <label><input type="radio" class="visually-hidden" name="plannen"
+                            value="klimaat, natuur en milieu" />Werk en inkomen</label>
+
+                    <label><input type="radio" class="visually-hidden" name="plannen"
+                            value="klimaat, natuur en milieu" />Democratie en overheid</label>
 
                     <label><input type="radio" class="visually-hidden" name="plannen"
                             value="klimaat, natuur en milieu" />Ondernemen en innoveren</label>
 
-                    <input type="submit" value="Submit">
+                    <label><input type="radio" class="visually-hidden" name="plannen"
+                            value="klimaat, natuur en milieu" />Europa en internationaal</label>
+
+                    <label><input type="radio" class="visually-hidden" name="plannen"
+                            value="klimaat, natuur en milieu" />Intergratie en immigratie</label>
+
+                    <label><input type="radio" class="visually-hidden" name="plannen"
+                            value="klimaat, natuur en milieu" />Media en cultuur</label>
+
+                    <label><input type="radio" class="visually-hidden" name="plannen"
+                            value="klimaat, natuur en milieu" />Vrij zij</label>
+
+                    <label><input type="radio" class="visually-hidden" name="plannen"
+                            value="klimaat, natuur en milieu" />Ruimte en bereikbaarheid</label>
+                </fieldset>
+
+                <fieldset>
+                    <label><input type="checkbox" class="visually-hidden" required>hallo2 </label>
+                    <label><input type="checkbox" class="visually-hidden" required>hallo2 </label>
+                    <label><input type="checkbox" class="visually-hidden" required>hallo2 </label>
+
+                    <button type="submit">Onze plannen</button>
                 </fieldset>
             </form>
-
         </section>
 
         <section>
@@ -68,6 +101,8 @@
                         door om de doelstelling van 60 procent CO2-reductie in 2030 te...</p>
 
                     <img src="images/Klimaat_natuur_milieu.jpg" alt="">
+                    <a href="#" aria-label="Onze plannen over zorg en gezondheid">Onze plannen</a>
+
                 </li>
 
                 <li>
@@ -77,6 +112,8 @@
                         door om de doelstelling van 60 procent CO2-reductie in 2030 te...</p>
 
                     <img src="images/wonen.jpg" alt="">
+                    <a href="#" aria-label="Onze plannen over zorg en gezondheid">Onze plannen</a>
+
                 </li>
 
                 <li>
@@ -86,6 +123,8 @@
                         door om de doelstelling van 60 procent CO2-reductie in 2030 te...</p>
 
                     <img src="images/onderwijs_wetenschap.jpg" alt="">
+                    <a href="#" aria-label="Onze plannen over zorg en gezondheid">Onze plannen</a>
+
                 </li>
 
 
@@ -93,11 +132,14 @@
                     <h3>Zorg en gezondheid</h3>
                     <p>Gezondheidszorg moet weer gaan over wat nodig is, in plaats van waar recht op is. Zorg moet voor
                         iedereen toegankelijk, betaalbaar en van hoge kwaliteit zijn. Of dat nou gaat…</p>
-
                     <img src="images/zorg_wetenschap.jpg" alt="">
+                    <a href="#" aria-label="Onze plannen over zorg en gezondheid">Onze plannen</a>
                 </li>
             </ul>
-            <a href="#">Onze plannen</a>
+
+            <button></button>
+            <button></button>
+
 
         </section>
 
@@ -106,55 +148,92 @@
             <p>Overweeg je op D66 te stemmen? Of twijfel je nog? Wij durven de vergelijking met andere partijen wel aan!
                 Met de partijdige kieswijzer laten we jou de belangrijkste verschillen zien.</p>
 
+
             <form>
+                <h3>Selecteer de thema's die jij belangrijk vindt</h3>
                 <fieldset>
-                    <h3>Selecteer de thema's die jij belangrijk vindt
-                    </h3>
-                    <label for="onderwijs"><input type="checkbox" name="onderwijs" value="onderwijs" />Onderwijs</label>
+                    <label for="onderwijs"><input type="checkbox" class="visually-hidden" name="onderwijs"
+                            value="onderwijs" />Onderwijs</label>
 
-                    <label for="klimaat"><input type="checkbox" name="klimaat" value="klimaat" />Klimaat</label>
+                    <label for="klimaat"><input type="checkbox" class="visually-hidden" name="klimaat"
+                            value="klimaat" />Klimaat</label>
 
-                    <label for="werk en inkomen"><input type="checkbox" name="werk en inkomen"
+                    <label for="werk en inkomen"><input type="checkbox" class="visually-hidden" name="werk en inkomen"
                             value="werk en inkomen" />Werk en inkomen</label>
 
-                    <label for="wonen"><input type="checkbox" name="wonen" value="wonen" />Wonen</label>
+                    <label for="wonen"><input type="checkbox" class="visually-hidden" name="wonen"
+                            value="wonen" />Wonen</label>
 
-                    <label for="zorg"><input type="checkbox" name="zorg" value="zorg" />Zorg</label>
+                    <label for="zorg"><input type="checkbox" class="visually-hidden" name="zorg"
+                            value="zorg" />Zorg</label>
 
-                    <label for="veiligheid"><input type="checkbox" name="veiligheid"
+                    <label for="veiligheid"><input type="checkbox" class="visually-hidden" name="veiligheid"
                             value="veiligheid" />Veiligheid</label>
 
-                    <label for="europa"><input type="checkbox" name="europa" value="europa" />Europa</label>
+                    <label for="europa"><input type="checkbox" class="visually-hidden" name="europa"
+                            value="europa" />Europa</label>
 
-                    <label for="vrij zijn"><input type="checkbox" name="vrij zijn" value="vrij zijn" />Vrij zijn</label>
+                    <label for="vrij zijn"><input type="checkbox" class="visually-hidden" name="vrij zijn"
+                            value="vrij zijn" />Vrij zijn</label>
+                </fieldset>
 
-                    <input type="submit" value="Submit">
+                <fieldset>
+                    <label for="partijen">Kies de partij waar jij D66 mee wilt vergelijken
+                    </label>
+                    <select name="partijlijst" id="partijen">
+                        <option value="PvdA/GL">D66 - PvdA/GL</option>
+                        <option value="PvdA/GL">D66 - PvdA/GL</option>
+                        <option value="PvdA/GL">D66 - PvdA/GL</option>
+                        <option value="PvdA/GL">D66 - PvdA/GL</option>
+                        <option value="PvdA/GL">D66 - PvdA/GL</option>
+                        <option value="PvdA/GL">D66 - PvdA/GL</option>
+                    </select>
                 </fieldset>
             </form>
 
-            <label for="partijen">Kies de partij waar jij D66 mee wilt vergelijken
-            </label>
-            <select name="partijlijst" form="partijlijst">
-                <option value="PvdA/GL">D66 - PvdA/GL</option>
-                <option value="PvdA/GL">D66 - PvdA/GL</option>
-                <option value="PvdA/GL">D66 - PvdA/GL</option>
-                <option value="PvdA/GL">D66 - PvdA/GL</option>
-                <option value="PvdA/GL">D66 - PvdA/GL</option>
-                <option value="PvdA/GL">D66 - PvdA/GL</option>
-            </select>
+
         </section>
 
         <section>
             <h2>Onze kandidaten</h2>
             <ul>
                 <li>
-                    <h3>Rob Jetten</h3>
-                    <p>Lijsttrekker, demissionair minister voor klimaat en energie</p>
-                    <img src="images/robjetten-D66.jpg" alt="Rob Jetten Lijsttrekker D66">
-                    <a href="#">Lees verder</a>
+                    <a href="rob-jetten.html">
+                        <h3>Rob Jetten</h3>
+                        <img src="images/robjetten-lijsttrekker.jpg" alt="Rob Jetten Lijsttrekker D66">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <h3>Rob Jetten</h3>
+                        <img src="images/sigridkaag-lijsttrekker.jpg" alt="Rob Jetten Lijsttrekker D66">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <h3>Rob Jetten</h3>
+                        <img src="images/janpaternotte-lijsttrekker.jpg" alt="Rob Jetten Lijsttrekker D66">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <h3>Rob Jetten</h3>
+                        <img src="images/janpaternotte-lijsttrekker.jpg" alt="Rob Jetten Lijsttrekker D66">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <h3>Rob Jetten</h3>
+                        <img src="images/janpaternotte-lijsttrekker.jpg" alt="Rob Jetten Lijsttrekker D66">
+                    </a>
                 </li>
             </ul>
-            <a href="#">Alle mensen van D66</a>
+
+            <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50">at 50/100</meter>
+
+            <a href="#"><span>→</span>Alle mensen van D66</a>
+            <button></button>
+            <button></button>
         </section>
 
         <section>
@@ -162,17 +241,26 @@
             <p>Er liggen grote opgaven voor Nederland: klimaat, woningbouw, onderwijs. Er is geen tijd te verliezen.
                 Onze generatie staat op voor de volgende. Jouw steun hebben we daar bij nodig.</p>
 
-            <a href="#">Bekijk alle initiatieven</a>
-
+            <a href="#"><span>→</span>Bekijk alle initiatieven</a>
             <ul>
                 <li>
-                    <h3>839 sec./ 1.000 sec.</h3>
-                    <h4>Tv-spots in de laatste weken</h4>
-                    <p>Om onze spot vaker uit te zenden hebben we jouw bijdrage nodig. Dan kunnen we onze boodschap niet
-                        alleen met </p>
-                    <img src="images/robjetten-D66.jpg" alt="Rob Jetten Lijsttrekker D66">
-                    <a href="#">Doe mee</a>
+                    <h3>Steuntje in de rug voor onze campagne vrijwilligers</h3>
+                    <p aria-label="">1.150 / <span>∞</span></p>
+                    <p>Geef onze vrijwilligers een steuntje in de rug. Zo kunnen we niet alleen zorgen voor voldoende
+                        advertenties en campagnematerialen, maar ook een kopje koffie na een activiteit.</p>
+                    <img src="images/vrijwilligers-campagne.jpg" alt="Rob Jetten Lijsttrekker D66">
+                    <a href="#"><span>→</span></a>
                 </li>
+
+                <li>
+                    <h3>Steuntje in de rug voor onze campagne vrijwilligers</h3>
+                    <p aria-label="">1.150 / <span>∞</span></p>
+                    <p>Geef onze vrijwilligers een steuntje in de rug. Zo kunnen we niet alleen zorgen voor voldoende
+                        advertenties en campagnematerialen, maar ook een kopje koffie na een activiteit.</p>
+                    <img src="images/partijen-zichtbaarheid.jpg" alt="Rob Jetten Lijsttrekker D66">
+                    <a href="#"><span>→</span></a>
+                </li>
+
             </ul>
         </section>
 
@@ -180,13 +268,58 @@
             <h2>Laatste nieuws</h2>
             <ul>
                 <li>
-                    <h3>Rob Jetten</h3>
-                    <p>Lijsttrekker, demissionair minister voor klimaat en energie</p>
-                    <img src="images/robjetten-D66.jpg" alt="Rob Jetten Lijsttrekker D66">
-                    <a href="#">Lees verder</a>
+                    <h3>66 successen in zes jaar</h3>
+                    <p>09.11.2023</p>
+                    <p>D66 heeft lokaal, regionaal, landelijk en in Europa mooie plannen gerealiseerd. We zijn een
+                        partij die niet alleen over verandering praat, we brengen het ook. Dat doen we vanuit
+                        optimisme</p>
+                    <a href="#"><span>→</span></a>
+                </li>
+                <li>
+                    <h3>66 successen in zes jaar</h3>
+                    <p>09.11.2023</p>
+                    <p>D66 heeft lokaal, regionaal, landelijk en in Europa mooie plannen gerealiseerd. We zijn een
+                        partij die niet alleen over verandering praat, we brengen het ook. Dat doen we vanuit
+                        optimisme</p>
+                    <a href="#"><span>→</span></a>
+                </li>
+                <li>
+                    <h3>66 successen in zes jaar</h3>
+                    <p>09.11.2023</p>
+                    <p>D66 heeft lokaal, regionaal, landelijk en in Europa mooie plannen gerealiseerd. We zijn een
+                        partij die niet alleen over verandering praat, we brengen het ook. Dat doen we vanuit
+                        optimisme</p>
+                    <img src="images/partijen-zichtbaarheid.jpg" alt="Rob Jetten Lijsttrekker D66">
+                    <a href="#"><span>→</span></a>
                 </li>
             </ul>
             <a href="#">Bekijk meer nieuwsberichten</a>
+        </section>
+
+        <section>
+            <h2>Doe mee met D66</h2>
+            <p>
+                Kies voor een land waar je vrij kunt zijn. Waar niemand je laat vallen. De toekomst wordt gemaakt door
+                mensen die meedoen. Zet de eerste stap en schrijf je in. </p>
+            <ul>
+                <li>
+                    <p>Ontvang updates van Rob Jetten</p>
+                    <img src="images/checkmark.svg" alt="">
+                <li>
+                    <p>Denk en praat mee met D66</p>
+                    <img src="images/checkmark.svg" alt="">
+                </li>
+                <li>
+                    <p>Gemakkelijk lid worden wanneer je wil</p>
+                    <img src="images/checkmark.svg" alt="">
+                </li>
+            </ul>
+
+            <a href="#"><span>→</span>Word direct lid</a>
+
+
+            <p>Door je aan te melden ga je akkoord met de verwerking van je persoonsgegevens volgens ons <a
+                    href="#">privacybeleid</a></p>
         </section>
     </main>
 

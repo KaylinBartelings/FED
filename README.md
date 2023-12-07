@@ -111,15 +111,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
+  - Tijdens de eerste feedback sessie gaf sanne aan dat mijn html redelijk goed en semantisch geschreven was.   
+    Wel adviseerde hij gebruik te maken van aria-labels om het zo voor mensen met een beperking en screen reader makkelijker te maken 
   - punt 2
   - nog een punt
   - ...
 
 </details>
-
-
-
 
 
 ## Voortgang 2 (week 3)
@@ -134,12 +132,29 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Kaylin Noella Bartelings 
+  css optimaliseren
+  filter
+  semantiek 
+  Hero, hamburger en images
 
+  |Sander
+  css optimaliseren
+  filter
+  semantiek 
+  Hero, hamburger en images
+
+  |Diya
+  css optimaliseren
+  filter
+  semantiek 
+  Hero, hamburger en images
+
+  |Insa
+  css optimaliseren
+  filter
+  semantiek 
+  Hero, hamburger en images
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -150,8 +165,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 - ...
 
 </details>
-
-
 
 
 
