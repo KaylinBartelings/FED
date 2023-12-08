@@ -34,8 +34,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-
+  https://web.archive.org/web/20231119202924/https://d66.nl/#https://web.archive.org/web/20231119202924/https://d66.nl/# 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
@@ -112,10 +111,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - Tijdens de eerste feedback sessie gaf sanne aan dat mijn html redelijk goed en semantisch geschreven was.   
-    Wel adviseerde hij gebruik te maken van aria-labels om het zo voor mensen met een beperking en screen reader makkelijker te maken 
-  - punt 2
-  - nog een punt
-  - ...
+    Wel adviseerde hij gebruik te maken van aria-labels om het zo voor mensen met een beperking en screen reader makkelijker te maken.
+ 
 
 </details>
 
@@ -126,8 +123,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  De afgelopen week heb ik De afgelopen week heb ik mij gefocust op het optimaliseren van de HTML- en CSS-code. Ik heb me specifiek gericht op het gebruik van semantisch correcte HTML om de structuur van de website te verbeteren en ervoor te zorgen dat deze goed wordt geïnterpreteerd door screenreaders.
+  
+  Daarnaast heb ik me beziggehouden met het implementeren van JavaScript-functionaliteiten. Een van de functies die ik heb toegevoegd, is het dynamisch veranderen van achtergrondkleuren van secties op basis van scrollen. Ook heb ik een slider gemaakt.
 
+  Wat betreft CSS heb ik me gericht op optimalisatie om een schone en efficiënte codebasis te behouden. Ik heb aandacht besteed aan het vermijden van herhalingen en het gebruik van selectoren om de styling van de website en mijn kennis van css te verbeteren.
+
+  Ik zou nog graag mijn css schoner willen coderen om herhaling te voorkomen, ik zou graag classes willen gebruiken maar ik ben mij ervan bewust dat dat niet altijd de beste oplossing is. ik leer te werken met nieuwe selectoren.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -180,26 +182,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-
-
 ## Voortgang 3 (week 4)
 
 <details>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Deze week ben ik aan de slag gegaan met het coderen van de tweede pagina, hier staan elementen als video en accordions op.
+  ik heb me gericht op het coderen van de footer voor de website. Een goed ontworpen footer is essentieel voor het verstrekken van belangrijke informatie en navigatiemogelijkheden. Hierbij heb ik geprobeerd mijn code schoon en efficiënt te houden.
 
+  Omdat ik surfaceplane heb gekozen heb ik een video toegevoegd aan mijn site. om ervoor te zorgen dat mijn site nog steeds toeganekelijk is is het voor mij belangerijk dat de video niet gelijk afspeelt en dat hij te bedienen is.
+
+  Verder heb ik mij gefocust op het testen van hoe toegankelijk mijn site was, en ben ik met een screen reader door kopjes gegaan en dit werkte allemaal.
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  | Kaylin Noella Bartelings 
+  css optimaliseren
+  semantiek 
+  Form en labels
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
