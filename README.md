@@ -70,9 +70,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### dynamisch deel (bijv menu): 
   <img src="./images/break_down_schets_menu.jpg" width="375px" alt="breakdown van menu">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
 </details>
 
 
@@ -260,7 +257,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Ook schuift de slider helemaal op als ik met de screenreader erdoor heen tab met de screenreader, ik heb met sanne overlegt hoe ik dit zou kunnen oplossen maar dit zou erg omslachtig zijn en ik wil niet aan de slag als developer dus hij adviseerde mij hier niet al te veel over in te zitten.
 
-  <img src="./images/screenshot_sider_screenreader.png" width="375px" alt="slider die opschuift door screenreader">
+  <img src="./images/screenshot_js_code_slider.png width="375px alt="slider die opschuift door screenreader">
 </details>
 
 
