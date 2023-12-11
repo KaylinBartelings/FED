@@ -1,0 +1,167 @@
+/***********/
+/* Hier staan alle codes voor de footer*/
+/***********/
+footer {
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    padding: 2em;
+    background: var(--black-color);
+
+    height: 112px;
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+
+footer.footerOpen {
+    height: 100%;
+}
+
+footer a {
+    color: var(--beige-bg-color);
+}
+
+footer li {
+    color: var(--white-color);
+}
+
+footer section {
+    background-color: var(--black-color);
+    padding: 0;
+    grid-column: span 2;
+}
+
+footer h2 {
+    color: var(--white-color-color);
+    margin-bottom: 2em;
+}
+
+footer section p {
+    display: grid;
+    color: var(--white-color);
+}
+
+footer ul:nth-of-type(2) {
+    margin-bottom: 3.75em;
+}
+
+footer>ul:nth-of-type(1) {
+    display: flex;
+    border: solid .2em var(--white-color);
+    border-radius: .5em;
+    height: fit-content;
+    padding: .8em;
+    margin-bottom: 5em;
+    width: fit-content;
+}
+
+footer>ul:nth-of-type(1) li:not(:last-of-type)::after {
+    content: "";
+    border: solid .1em var(--white-color);
+    height: 1.2em;
+    margin: 0 1em;
+}
+
+footer ul:nth-of-type(2) li {
+    margin-bottom: .75em;
+}
+
+footer ul:nth-of-type(2) li a {
+    font-weight: 500;
+}
+
+footer img {
+    width: 12em;
+    margin-bottom: 2em;
+}
+
+footer button {
+    content: "";
+    background-color: var(--black-color);
+    background-image:
+        linear-gradient(var(--white-color) 0 0),
+        linear-gradient(var(--white-color) 0 0);
+    background-size:
+        30% 5%,
+        5% 30%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5em;
+    aspect-ratio: 1;
+    border: solid .1em var(--white-color);
+    border-radius: 50%;
+}
+
+footer .buttonToggle {
+    content: "";
+    background-color: var(--black-color);
+    background-image:
+        linear-gradient(var(--white-color) 0 0);
+    background-size:
+        30% 5%;
+}
+
+footer details {
+    font-size: 1em;
+    padding: 1em 0;
+    font-weight: 600;
+    border-bottom: 0.2em solid var(--white-color);
+    transition: .3s ease-in;
+    color: var(--white-color);
+}
+
+footer details[open] {
+    padding: 1.5em 0 2em;
+}
+
+footer details ul li a {
+    line-height: 2.5em;
+    font-weight: 500;
+}
+
+footer summary::-webkit-details-marker {
+    display: none;
+}
+
+footer summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+    list-style: none;
+}
+
+footer summary::after {
+    content: "";
+    background-image:
+        linear-gradient(var(--white-color) 0 0),
+        linear-gradient(var(--white-color) 0 0);
+    background-size:
+        30% 5%,
+        5% 30%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5em;
+    aspect-ratio: 1;
+    border: solid .1em var(--white-color);
+    border-radius: 50%;
+    margin-left: 1em;
+}
+
+footer details[open] summary::after {
+    content: "";
+    background-image:
+        linear-gradient(var(--white-color) 0 0);
+    background-size:
+        30% 5%;
+}
+
+/***********/
+/* Hier eindigen alle codes van de footer*/
+/***********/

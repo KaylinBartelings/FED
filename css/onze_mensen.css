@@ -2,6 +2,7 @@ body {
     background: var(--beige-bg-color);
 }
 
+
 section:nth-of-type(2) p {
     font-weight: 500;
 }
@@ -16,13 +17,35 @@ section:nth-of-type(2) p:is( :nth-of-type(2), :nth-of-type(3), :nth-of-type(4)) 
 
 section:nth-of-type(2) h3 {
     margin-bottom: 0.7em;
+    border-bottom: solid 0.1em var(--black-color);
+}
+
+section:nth-of-type(2) {
+    background: var(--yellow-bg-color);
 }
 
 section:nth-of-type(2) ul {
-    background: var(--yellow-bg-color);
     margin-left: -2.2em;
     width: calc(100% + 4.4em);
     padding: 2.2em;
+}
+
+section:nth-of-type(2) ul:nth-of-type(2) {
+    background-color: transparent;
+    display: flex;
+    border: solid .2em var(--black-color);
+    border-radius: .5em;
+    height: fit-content;
+    padding: .8em;
+    margin-bottom: 5em;
+    width: fit-content;
+}
+
+section:nth-of-type(2) ul:nth-of-type(2) li:not(:last-of-type)::after {
+    content: "";
+    border: solid .1em var(--black-color);
+    height: 1.2em;
+    margin: 0 1em;
 }
 
 section:nth-of-type(2) ul li {
@@ -33,18 +56,19 @@ section:nth-of-type(2) ul li label {
     display: block;
     display: contents;
     font-weight: 700;
+    font-size: .8em;
 }
 
 details {
     font-size: 1.5em;
     padding: 1em 0;
     font-weight: 600;
-    border-bottom: 0.2em solid black;
+    border-bottom: .15em solid var(--black-color);
     transition: .3s ease-in;
+    margin-bottom: 2em;
 }
 
 details[open] {
-    /* background: red; */
     padding: 1.5em 0 2em;
 }
 
@@ -188,3 +212,6 @@ section:nth-of-type(4) ul li a span {
     padding: .3em;
 }
 
+blockquote p {
+    margin-bottom: 2em;
+}

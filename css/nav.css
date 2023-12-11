@@ -1,0 +1,97 @@
+/***********/
+/* Hier staan alle codes voor de header en nav*/
+/***********/
+header {
+    padding: 1.25em 2.1875em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-height: 4.1875em;
+    width: auto;
+    height: 100%;
+    border-radius: unset;
+}
+
+header button {
+    background: var(--black-color);
+    color: var(--white-color);
+    padding: 1em;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+nav {
+    padding: 1.25em 2.1875em;
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    overflow: hidden;
+    background: var(--black-color);
+    transform: translateX(-100%);
+    transition: .3s ease-in;
+}
+
+nav ul {
+    margin-bottom: 2em;
+}
+
+nav ul li {
+    line-height: 2em;
+}
+
+nav a,
+nav p {
+    color: var(--white-color);
+    font-weight: 500;
+}
+
+nav a:nth-child(n+2) {
+    background: var(--yellow-bg-color);
+    padding: .7em;
+    color: var(--black-color);
+    border-radius: var(--border-radius);
+}
+
+nav p {
+    color: var(--grey-color);
+    margin-bottom: 1.5em;
+}
+
+nav.navOpen {
+    transform: translateX(0);
+}
+
+nav input[type="text"] {
+    padding: 0 1em;
+    height: 3.125em;
+    background: var(--white-color);
+    font-size: var(--body-text);
+    border: none;
+    border-radius: var(--border-radius);
+
+
+    background-image: url('../images/search.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    margin-bottom: 1em;
+
+}
+
+nav input[type="text"]::placeholder {
+    color: var(--black-color);
+}
+
+nav ul:nth-of-type(1) li {
+    font-size: 2em;
+}
+
+nav ul:nth-of-type(2) li {
+    font-size: 1.5em;
+}
+/***********/
+/* Hier eindigen alle codes voor de header en nav*/
+/***********/

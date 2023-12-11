@@ -52,8 +52,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Een van de belangerijkste bevindingen was dat de site ten eerste erg inconsistent is met het stylen van links en buttons. linken zien er soms uit als buttons en soms zien buttons eruit als linkjes. 
 
+  Ook gebruikt de site van d66 niet overal een h1 element en gebruiken zij veel divs. ze gebruiken niet altijd ul en li tags voor lijsten.
 </details>
 
 
@@ -67,7 +68,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="./images/break_down_schets_home_d66.jpg" width="375px" alt="breakdown van de hele home pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="./images/break_down_schets_menu.jpg" width="375px" alt="breakdown van menu">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
@@ -166,8 +167,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Met de tweede test ben ik mijn eigen site gaan testen, uit de test kwam dat ik wel gebruik maakte van het H1 element per pagina, mijn video speelt niet automatisch af en is te bedienen en op pauze te zetten dus dat is postief. Ik gebruik voor linkjes a elementen. De site heeft geen horizontale scroll en elke slider is te bedienen met buttons. Alle images hebben alt's.
 
+
+  Ook maakte de orginele site van d66 niet goed gebruik van heading elementen en is mijn site semantischer opgebouwd en maakt maar gebruik van 1 div. Ik heb styling voor buttons en voor links gescheiden gehouden en niet overgenomen van de site omdat hun inconsisent waren.
 </details>
 
 
@@ -235,7 +238,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="./images/screenshot_dubbele_form.png" width="375px" alt="dubbel form met css codes">
 
    ook hier werk ik voor het tweede form weer met has. als de gebruiker een label heeft aangeklikt kleurt deze als bevestiging dat hij is aangeklikt.
-   
+
   <img src="./images/screenshot_label_has_checked.png" width="375px" alt="label has checked code">
 
 
