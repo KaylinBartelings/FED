@@ -22,8 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw/rood
 
   #### Je focus:
-  Ik wil mij foccusen op de surface plane.
- 
+  Ik wil mij foccusen op de surface plane. De reden hiervoor is omdat ik graag in de toekomst aan de slag wil gaan als digital designer en daarvoor wil ik graag wat meer kennis over codes hebben op het gebied van wat er allemaal mogelijk is qua surface. Dit zal mij in de toekomst helpen met het communiceren met developers
 </details>
 
 
@@ -65,7 +64,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="./images/break_down_schets_home_d66.jpg" width="375px" alt="breakdown van de hele home pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -74,8 +73,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
-
-
 
 
 
@@ -110,8 +107,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - Tijdens de eerste feedback sessie gaf sanne aan dat mijn html redelijk goed en semantisch geschreven was.   
-    Wel adviseerde hij gebruik te maken van aria-labels om het zo voor mensen met een beperking en screen reader makkelijker te maken.
+  - Tijdens de eerste feedback sessie gaf sanne aan dat mijn html redelijk goed en semantisch geschreven was. Wel adviseerde hij gebruik te maken van aria-labels om het zo voor mensen met een beperking en screen reader makkelijker te maken.
  
 
 </details>
@@ -130,6 +126,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Wat betreft CSS heb ik me gericht op optimalisatie om een schone en efficiënte codebasis te behouden. Ik heb aandacht besteed aan het vermijden van herhalingen en het gebruik van selectoren om de styling van de website en mijn kennis van css te verbeteren.
 
   Ik zou nog graag mijn css schoner willen coderen om herhaling te voorkomen, ik zou graag classes willen gebruiken maar ik ben mij ervan bewust dat dat niet altijd de beste oplossing is. ik leer te werken met nieuwe selectoren.
+
+  Ook heb ik geleerd om te stylen met ::before en ::after
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -203,13 +201,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Form en labels
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
+- maken van een label met focus en has
+- vraagje over html semantiek in footer 
 </details>
 
 

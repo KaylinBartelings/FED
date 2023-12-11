@@ -1,3 +1,7 @@
+section:nth-of-type(1) {
+  padding: 1em;
+}
+
 section:nth-of-type(2) {
   padding: 1em;
 }
@@ -97,16 +101,12 @@ section:nth-of-type(3) a {
   order: 4;
 }
 
-section:nth-of-type(3) progress {
-  width:70%;
-}
-
 section:nth-of-type(3) button {
   padding: 0.2em;
-    width: fit-content;
-    background: black;
-    color: white;
-    border-radius: 0.25em;
+  width: fit-content;
+  background: black;
+  color: white;
+  border-radius: 0.25em;
 }
 
 
@@ -243,11 +243,6 @@ section:nth-of-type(5) button {
   border-radius: 0.25em;
 }
 
-section:nth-of-type(5) progress {
-  width: 70%;
-  height: .5em;
-}
-
 
 section:nth-of-type(6) {
   background-color: var(--beige-bg-color);
@@ -305,14 +300,27 @@ section:nth-of-type(7) {
 }
 
 section:nth-of-type(7) ul {
-  display: flex;
+  /* display: flex;
   overflow: auto;
   gap: 1.5em;
   margin: 0 -2.2em;
   padding: 0 2.2em;
   scroll-snap-type: x mandatory;
   overscroll-behavior-x: contain;
-  margin-top: 2em;
+  margin-top: 2em; */
+
+  display: flex;
+  transition: transform 0.5s ease;
+
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  /* white-space: nowrap; */
+  scroll-behavior: smooth;
+  overflow: visible;
+  gap: 2.18em;
+
+  margin-bottom: 2em;
 }
 
 section:nth-of-type(7) ul li {
@@ -344,6 +352,14 @@ section:nth-of-type(7) ul li h3 {
 
 section:nth-of-type(7) ul li a {
   order: 4;
+}
+
+section:nth-of-type(7) button {
+  padding: 0.2em;
+  width: fit-content;
+  background: black;
+  color: white;
+  border-radius: 0.25em;
 }
 
 
@@ -395,18 +411,52 @@ section:nth-of-type(8) a {
   margin-bottom: 2em;
 }
 
+section:nth-of-type(8) fieldset {
+  display: grid;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
 section:nth-of-type(8) fieldset label {
- display: none;
+  display: block;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  position: relative;
+  border: none;
+  padding: .5em .5em .5em 0;
+}
+
+section:nth-of-type(8) label:has([required])::after {
+  content: "*";
+  position: absolute;
+  right: 1em;
+}
+
+section:nth-of-type(8) fieldset label span {
+  position: absolute;
+  transition: .3s;
+  left: 0.5em;
 }
 
 section:nth-of-type(8) fieldset input {
-  border: solid 0.15em var(--black-color);
-  border-radius: 0.5em;
-  padding: 0.5em 1em;
-  line-height: 1.875;
-  background: transparent;
   width: 100%;
-  margin-bottom: 1em;
+  padding: .5em 2em .5em .5em;
+  border: none;
+  appearance: none;
+  border-bottom: solid .2em var(--black-color);
+  background: none;
+}
+
+section:nth-of-type(8) fieldset input:focus {
+  outline: none;
+}
+
+
+section:nth-of-type(8) fieldset label:focus-within span,
+label:has(input:not(:placeholder-shown)) span {
+  translate: 0 -1rem;
+  font-size: .7em;
 }
 
 section:nth-of-type(8) button {
@@ -417,6 +467,7 @@ section:nth-of-type(8) button {
   font-size: 1em;
   border-radius: 0.5em;
   margin-bottom: 2em;
+  justify-self: start;
 }
 
 section:nth-of-type(1).inBeeld {
