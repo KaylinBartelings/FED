@@ -36,11 +36,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://web.archive.org/web/20231119202924/https://d66.nl/#https://web.archive.org/web/20231119202924/https://d66.nl/# 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="./images/screenshot_home_page.png" width="375px" alt="de home pagina van d66">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="./images/screenshot_rob_jetten_page.png" width="375px" alt="de detail pagina over Rob Jetten">
  
 </details>
 
@@ -105,11 +105,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   |semantische correct geschreven html code
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - Tijdens de eerste feedback sessie gaf sanne aan dat mijn html redelijk goed en semantisch geschreven was. Wel adviseerde hij gebruik te maken van aria-labels om het zo voor mensen met een beperking en screen reader makkelijker te maken.
- 
-
+  Tijdens deze eerste feedback sessie was er nog relatief weinig om concreet feedback op te geven dan enkel over de html, sanne gaf aan dat mijn html redelijk goed en semantisch geschreven was. Wel adviseerde hij gebruik te maken van aria-labels om het zo voor mensen met een beperking en screen reader makkelijker te maken. Ik had goed gebruik maakt van de bestaande html tags maar moest alle alts nog wel invullen.
 </details>
 
 
@@ -127,7 +123,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Ik zou nog graag mijn css schoner willen coderen om herhaling te voorkomen, ik zou graag classes willen gebruiken maar ik ben mij ervan bewust dat dat niet altijd de beste oplossing is. ik leer te werken met nieuwe selectoren.
 
-  Ook heb ik geleerd om te stylen met ::before en ::after
+  Ook heb ik geleerd om te stylen met ::before en ::after en te werken met en accordions met de html tages detail en summary. Op de pagina van D66 hebben zij een accordions met een button waar een plusje in staat als hij ingeplakt is en een min als hij uitgeklapt is. Normaal gesproken zou ik hier een image of een span voor gebruiken maar Sanne legde uit in de les dat ik hier ook een ::after voor kon gebruiken. ik had wel eens met ::after en ::before gewerkt maar niet vaak dus hij legde mij uit hoe ik dit het beste kon doen en ik heb hier veel van geleerd en vervolgens ook voor de button in mijn footer gebruikt die vervolgens met javascript in en uitklapt.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -157,13 +153,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Hero, hamburger en images
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  Deze week had ik zelf niet heel veel vragen voor tijdens de feedback sessie, ik had de meeste dingen waar ik tegen aan liep of al zelf op kunnen lossen doormiddel van googelen, vragen aan medestudenten of door het aan sanne te vragen in de les. wel liep ik tegen een puntje aan dat ik niet wist hoe ik de labels in een input veld kon laten vergoten en verkleinen als er een focus is. Ik had dit gevraagd aan de student assisent tijdens de feedback sessie en hij gaf aan dat ik sowiso met :focus moest werken maar hoe het verder werkte met het schalen van het label was nog niet helemaal duidelijk voor ons beide. (ik besloot dit op te schrijven en later zelf te googelen of aan sanne te vragen)
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
-
+  Verder gaf hij aan dat mijn html er semantisch goed uit zag maar mijn css misschien nog wat cleaner kon door bijv. margins en paddings op te nemen als variabel in mijn :root. 
 </details>
 
 
@@ -187,6 +179,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   Deze week ben ik aan de slag gegaan met het coderen van de tweede pagina, hier staan elementen als video en accordions op.
+
   ik heb me gericht op het coderen van de footer voor de website. Een goed ontworpen footer is essentieel voor het verstrekken van belangrijke informatie en navigatiemogelijkheden. Hierbij heb ik geprobeerd mijn code schoon en efficiënt te houden.
 
   Omdat ik surfaceplane heb gekozen heb ik een video toegevoegd aan mijn site. om ervoor te zorgen dat mijn site nog steeds toeganekelijk is is het voor mij belangerijk dat de video niet gelijk afspeelt en dat hij te bedienen is.
@@ -200,13 +193,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   semantiek 
   Form en labels
 
+  | Sander
+  css optimaliseren
+  semantiek 
+  Form en labels
+
+  | Insa
+  css optimaliseren
+  semantiek 
+  Form en labels
+
+ | Diya
+  css optimaliseren
+  semantiek 
+  Form en labels
+
+
   ### Verslag van meeting
-- maken van een label met focus en has
-- vraagje over html semantiek in footer 
+  Aangezien mijn vraag tijdens de vorige feedback sessie niet volledig beantwoord kon worden vroeg ik de vraag tijdens deze laatste feedback sessie opnieuw aan Sanne, hij heeft een voorbeeld in codepen gemaakt terwijl ik meeschreef in mijn eigen code. Sanne legte uit dat :has hiervoor handig was omdat :has controleert of een element een bepaalde eigenschap bezit, als dat het geval is dan zal hij de codes en styling uitvoeren. Ik heb has eerder gebruikt op advies van Sanne dus ik wist inmiddes wat de functie van :has voor was maar ik heb er nog niet vaak mee gewerkt dus ik had niet gelijk door dat ik :has hiervoor kon gebruiken. 
+
+  Ook had ik een vraag over een semantisch puntje in mijn footer. Ik had namelijk een section aangemaakt in mijn footer en ik wist niet helemaal zeker of dit oke was maar volgens sanne was dit juist goed omdat het dan voor screenreaders makkelijk was.
 </details>
-
-
-
 
 
 ## Eindgesprek (week 5)
@@ -219,15 +226,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb geleerd om te werken met ::after. Voor de footer en accordions heb ik buttons die open en dichtklappen als je erop klikt. als het open is heeft de button een min, als het dicht is een plusje. normaal zou ik dit doen met een img maar sanne heeft mij geleerd dat dit mogelijk is met ::after en dat dit gewoon het zelfde werkt als stylen van andere elementen. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="./images/screenshot_footer_button_styling_after.png" width="375px" alt="footer button gestyled met ::after">
+
+
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Ik wilde werken met een veranderde achtergrond op basis van scroll, ik zie dit namelijk veel bij awwward sites en wilde graag dit zelf een keer toepassen en progammeren. Ik had hier nog nooit meegewerkt dus ik wist niet zo goed hoe en waar ik moest beginnen. Na wat uitleg en codes van sanne begreep ik een beetje hoe en wat. zelf zou ik niet uit mijn hoofd deze code geschreven kunnen hebben. Maar na de uitleg begreep ik in grote lijnen wel wat er stond en werkte het.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="./images/screenshot_js_code_intersecting.png" width="375px" alt="javascript codes voor intersecting function">
+
+  Op de site van D66 werken zij met een slider die te bedienen is met buttons, ik heb hiervoor met behulp van chatgpt een slider function gemaakt in JavaScript. Ik ben zelf niet goed met javascript dus ik heb chatgpt gevraagd om mij hierbij te helpen. Chatgpt schrijft een stuk geavanceerdere codes dan ik kan schrijven en zelfs kan lezen dus ik heb Jake en Sanne gevraagd mee te kijken en uitleg te geven over wat er staat en heb hierdoor nieuwe dingen geleerd zoals wat een % is. een % is een modulo, dit kijkt naar hoevaak het getal in het hele past, dat wat over blijft is de modulo. ook heb ik geleerd dat => een nieuwe manier van functies schrijven is
+  <img src="./images/screenshot_js_code_slider.png" width="375px" alt="javascript codes voor slider function">
 </details>
 
 
@@ -239,12 +251,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
+  1. Inspiratie voorbeeld voor intersecting 
+  https://codepen.io/daveredfern/pen/zBGBJV
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  2. Website voor het omrekenen van px to em
+  https://www.w3schools.com/tags/ref_pxtoemconversion.asp
+
+  3. Code voor class="visually-hidden" gebruik om elementen die er wel zijn maar niet getoond hoeven te worden te verbergen. Voor screenreaders moeten ze er wel zijn maar visueel niet.
+  https://www.a11yproject.com/posts/how-to-hide-content/
+
+  4. Gebruik van chatgpt voor het schrijven van de slider function in javascript 
+  https://chat.openai.com
+
+  5. Code en uitleg voor Detail en Summary 
+  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
+
+  6. Code en uitleg voor het gebruik van fieldsets 
+  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset
+
+  7. JavaScript codes voor intersecting function
+  Hooft, M.S. t 
 
 </details>
