@@ -6,14 +6,18 @@
 
 :root {
     /* colors */
-    --main-bg-color: #9D8FC4;
     --white-color: #fff;
     --black-color: #000;
+    --grey-color: #e2e2e2;
+    --dark-grey-color: #2b2b2b;
+
+    /* colors voor achtergrond*/
+    --main-bg-color: #9D8FC4;
     --blue-bg-color: #B7E2E7;
     --green-bg-color: #19B27D;
     --beige-bg-color: #F6F2E7;
     --yellow-bg-color: #FFC654;
-    --grey-color: #e2e2e2;
+    --dark-grey-bg-color: #141414;
 
     /* font sizes */
     --heading-1: 4.875rem;
@@ -36,8 +40,84 @@
 /***********/
 @media (prefers-color-scheme: dark) {
     :root {
-        --main-bg-color: var(--black-color);
+        --main-bg-color: var(--dark-grey-bg-color);
+        --blue-bg-color: var(--dark-grey-bg-color);
+        --green-bg-color: var(--dark-grey-bg-color);
+        --beige-bg-color: var(--dark-grey-bg-color);
+        --yellow-bg-color: var(--dark-grey-bg-color);
+        --black-color: #fff;
+        --white-color: #000;
+        --grey-color:var(--dark-grey-color);
+
     }
+
+    section:nth-of-type(6) ul li, section:nth-of-type(7) ul li {
+        background-color: var(--dark-grey-color) !important;
+    }
+
+    section:nth-of-type(8) img, footer img{
+        filter: invert(1);
+    }
+
+}
+
+/***********/
+/* Hier staan alle codes voor de hoog contrast*/
+/***********/
+@media (prefers-contrast: more) {
+    :root {
+        --main-bg-color: #000;
+        --blue-bg-color: #000;
+        --green-bg-color: #000;
+        --beige-bg-color: #000;
+        --yellow-bg-color: #000;
+        --black-color: #fff;
+        --white-color: #000;
+    }
+
+
+    label {
+        border: solid 0.15em #FF00FF !important;
+    }
+
+    section:nth-of-type(2) label:has(input:checked) {
+        background-color: #FF00FF !important;
+    }
+
+    button {
+        background-color: #FF00FF !important;
+        color: var(--black-color)!important;
+    }
+
+    a span {
+        background-color: #FF00FF !important;
+    }
+
+    section:nth-of-type(4) fieldset:nth-of-type(2) label {
+        border: none!important;
+    }
+
+    select {
+        border: solid 0.15em #FF00FF !important;
+    }
+
+    section:nth-of-type(6) ul li, section:nth-of-type(7) ul li {
+        background-color: var(--dark-grey-color) !important;
+    }
+
+    section:nth-of-type(8) img, footer img{
+        filter: invert(1);
+    }
+
+    input {
+        border-bottom: solid 0.2em #FF00FF!important;
+    }
+
+    section:nth-of-type(8) fieldset label {
+        border: none !important;
+    }
+
+
 }
 
 /***********/
@@ -93,18 +173,21 @@ h1 {
     hyphens: auto;
     position: relative;
     z-index: 1;
+    color: var(--black-color);
 }
 
 h2 {
     font-size: var(--heading-2);
     line-height: var(--headings-line-height);
     font-weight: 700;
+    color: var(--black-color);
 }
 
 
 h3 {
     font-size: var(--heading-3);
     font-weight: 700;
+    color: var(--black-color);
 }
 
 a {
@@ -162,7 +245,7 @@ video {
 progress {
     width: 70%;
     height: .5em;
-  }
+}
 
 figcaption {
     font-size: .8em;
@@ -195,6 +278,7 @@ label {
     display: flex;
     padding: 0.5em 1em;
     line-height: 1.875;
+    color: var(--black-color);
 }
 
 label:has([type="radio"]:checked) {
@@ -231,7 +315,7 @@ header img {
 
 header button {
     background: var(--black-color);
-    color: var(--beige-bg-color);
+    color: var(--white-color);
     padding: 1em;
     border-radius: 0.5em;
     font-size: 1em;
@@ -259,7 +343,7 @@ nav ul li {
 
 nav a,
 nav p {
-    color: var(--beige-bg-color);
+    color: var(--white-color);
     font-weight: 500;
 }
 
@@ -324,6 +408,10 @@ footer {
     transition: .3s ease;
 }
 
+/* footer h2 {
+    color: var(--white-color)!important;
+} */
+
 footer.footerOpen {
     height: 100%;
 }
@@ -333,23 +421,23 @@ footer a {
 }
 
 footer li {
-    color: var(--beige-bg-color);
+    color: var(--white-color);
 }
 
 footer section {
-    background: var(--black-color);
+    background-color: var(--black-color);
     padding: 0;
     grid-column: span 2;
 }
 
 footer h2 {
-    color: var(--beige-bg-color);
+    color: var(--white-color-color);
     margin-bottom: 2em;
 }
 
 footer section p {
     display: grid;
-    color: var(--beige-bg-color);
+    color: var(--white-color);
 }
 
 footer ul:nth-of-type(2) {
@@ -358,7 +446,7 @@ footer ul:nth-of-type(2) {
 
 footer>ul:nth-of-type(1) {
     display: flex;
-    border: solid .2em var(--beige-bg-color);
+    border: solid .2em var(--white-color);
     border-radius: .5em;
     height: fit-content;
     padding: .8em;
@@ -368,7 +456,7 @@ footer>ul:nth-of-type(1) {
 
 footer>ul:nth-of-type(1) li:not(:last-of-type)::after {
     content: "";
-    border: solid .1em var(--beige-bg-color);
+    border: solid .1em var(--white-color);
     height: 1.2em;
     margin: 0 1em;
 }
@@ -390,8 +478,8 @@ footer button {
     content: "";
     background-color: var(--black-color);
     background-image:
-        linear-gradient(var(--beige-bg-color) 0 0),
-        linear-gradient(var(--beige-bg-color) 0 0);
+        linear-gradient(var(--white-color) 0 0),
+        linear-gradient(var(--white-color) 0 0);
     background-size:
         30% 5%,
         5% 30%;
@@ -402,7 +490,7 @@ footer button {
     align-items: center;
     width: 1.5em;
     aspect-ratio: 1;
-    border: solid .1em var(--beige-bg-color);
+    border: solid .1em var(--white-color);
     border-radius: 50%;
 }
 
@@ -410,7 +498,7 @@ footer .buttonToggle {
     content: "";
     background-color: var(--black-color);
     background-image:
-        linear-gradient(var(--beige-bg-color) 0 0);
+        linear-gradient(var(--white-color) 0 0);
     background-size:
         30% 5%;
 }
@@ -419,9 +507,9 @@ footer details {
     font-size: 1em;
     padding: 1em 0;
     font-weight: 600;
-    border-bottom: 0.2em solid var(--beige-bg-color);
+    border-bottom: 0.2em solid var(--white-color);
     transition: .3s ease-in;
-    color: var(--beige-bg-color);
+    color: var(--white-color);
 }
 
 footer details[open] {
@@ -448,8 +536,8 @@ footer summary {
 footer summary::after {
     content: "";
     background-image:
-        linear-gradient(rgb(255, 255, 255) 0 0),
-        linear-gradient(rgb(255, 255, 255) 0 0);
+        linear-gradient(var(--white-color) 0 0),
+        linear-gradient(var(--white-color) 0 0);
     background-size:
         30% 5%,
         5% 30%;
@@ -460,7 +548,7 @@ footer summary::after {
     align-items: center;
     width: 1.5em;
     aspect-ratio: 1;
-    border: solid .1em var(--beige-bg-color);
+    border: solid .1em var(--white-color);
     border-radius: 50%;
     margin-left: 1em;
 }
@@ -468,7 +556,7 @@ footer summary::after {
 footer details[open] summary::after {
     content: "";
     background-image:
-        linear-gradient(var(--beige-bg-color) 0 0);
+        linear-gradient(var(--white-color) 0 0);
     background-size:
         30% 5%;
 }

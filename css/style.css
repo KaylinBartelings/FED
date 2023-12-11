@@ -58,12 +58,6 @@ section:nth-of-type(3) {
 }
 
 section:nth-of-type(3) ul {
-  /* display: flex;
-  overflow: auto;
-  gap: 1.5em;
-  scroll-snap-type: x mandatory;
-  overscroll-behavior-x: contain; */
-
   display: flex;
   transition: transform 0.5s ease;
 
@@ -143,11 +137,12 @@ section:nth-of-type(4) fieldset:nth-of-type(2) label {
 }
 
 section:nth-of-type(4) fieldset:nth-of-type(2) select {
-  border: solid .15em black;
+  border: solid .15em var(--black-color);
   padding: 1em;
   background-color: transparent;
   border-radius: 0.5em;
   width: 100%;
+  color: var(--black-color);
 }
 
 section:nth-of-type(4) label {
@@ -297,6 +292,10 @@ ul li a span {
 
 section:nth-of-type(7) {
   background-color: var(--yellow-bg-color);
+}
+
+section:nth-of-type(7) h2 {
+  margin-bottom: 1em;
 }
 
 section:nth-of-type(7) ul {
