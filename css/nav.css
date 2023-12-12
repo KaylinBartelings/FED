@@ -24,6 +24,29 @@ header button {
     font-weight: 600;
 }
 
+nav button {
+    border: solid .15em var(--white-color);
+    border-radius: 50%;
+}
+
+nav button::before{
+    content: "";
+    background-image:
+        linear-gradient(var(--white-color) 0 0),
+        linear-gradient(var(--white-color) 0 0);
+    background-size:
+        50% 10%,
+        10% 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5em;
+    aspect-ratio: 1;
+    rotate: 45deg;
+}
+
 nav {
     padding: 1.25em 2.1875em;
     position: fixed;
@@ -72,13 +95,12 @@ nav input[type="text"] {
     font-size: var(--body-text);
     border: none;
     border-radius: var(--border-radius);
-
-
     background-image: url('../images/search.svg');
     background-repeat: no-repeat;
     background-position: right center;
     margin-bottom: 1em;
-
+    width: 80%;
+    margin-right: 1em;
 }
 
 nav input[type="text"]::placeholder {

@@ -36,11 +36,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://web.archive.org/web/20231119202924/https://d66.nl/#https://web.archive.org/web/20231119202924/https://d66.nl/# 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="./images/screenshot_home_page.png" width="375px" alt="de home pagina van d66">
+  <img src="./readme-images/screenshot_home_page.png" width="375px" alt="de home pagina van d66">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="./images/screenshot_rob_jetten_page.png" width="375px" alt="de detail pagina over Rob Jetten">
+  <img src="./readme-images/screenshot_rob_jetten_page.png" width="375px" alt="de detail pagina over Rob Jetten">
  
 </details>
 
@@ -65,10 +65,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="./images/break_down_schets_home_d66.jpg" width="375px" alt="breakdown van de hele home pagina">
+  <img src="./readme-images/break_down_schets_home_d66.jpg" width="375px" alt="breakdown van de hele home pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="./images/break_down_schets_menu.jpg" width="375px" alt="breakdown van menu">
+  <img src="./readme-images/break_down_schets_menu.jpg" width="375px" alt="breakdown van menu">
 
 </details>
 
@@ -228,36 +228,36 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Dit ging goed/Heb ik geleerd: 
   Ik heb geleerd om te werken met ::after. Voor de footer en accordions heb ik buttons die open en dichtklappen als je erop klikt. als het open is heeft de button een min, als het dicht is een plusje. normaal zou ik dit doen met een img maar sanne heeft mij geleerd dat dit mogelijk is met ::after en dat dit gewoon het zelfde werkt als stylen van andere elementen. 
 
-  <img src="./images/screenshot_footer_button_styling_after.png" width="375px" alt="footer button gestyled met ::after">
+  <img src="./readme-images/screenshot_footer_button_styling_after.png" width="375px" alt="footer button gestyled met ::after">
 
   Ook heb ik geleerd te werken met dubbele forms achter elkaar, de site vraagt de gebruiker een vraag en aan de hand van die keuze wordt de gebruiker door gestuurd naar een volgend form maar de geberuiker blijft op dezelfde pagina. dit betekent dat er twee forms zijn waarvan er een verborgen moet zijn en te voorschijn moet komen als de andere bantwoord is. ik had dit nog nooit gedaan dus dit is zeker iets wat ik geleerd heb. 
   
-  <img src="./images/screenshot_dubbele_form.png" width="375px" alt="dubbel form met css codes">
+  <img src="./readme-images/screenshot_dubbele_form.png" width="375px" alt="dubbel form met css codes">
 
    ook hier werk ik voor het tweede form weer met has. als de gebruiker een label heeft aangeklikt kleurt deze als bevestiging dat hij is aangeklikt.
 
-  <img src="./images/screenshot_label_has_checked.png" width="375px" alt="label has checked code">
+  <img src="./readme-images/screenshot_label_has_checked.png" width="375px" alt="label has checked code">
 
 
   Ik heb geleerd hoe ik in css een darkmode maak, ik heb hier nog nooit eerder meegewerkt dus dit was nieuw voor mij. Het bleek helemaal niet zo heen ingewikkeld te zijn en door custom properties kan je dit heel snel aanpassen.
 
-  <img src="./images/screenshot_dark_mode.png" width="375px" alt="code voor darkmode functie">
+  <img src="./readme-images/screenshot_dark_mode.png" width="375px" alt="code voor darkmode functie">
 
 
 
   ### Dit was lastig/Is niet gelukt:
   Ik wilde werken met een veranderde achtergrond op basis van scroll, ik zie dit namelijk veel bij awwward sites en wilde graag dit zelf een keer toepassen en progammeren. Ik had hier nog nooit meegewerkt dus ik wist niet zo goed hoe en waar ik moest beginnen. Na wat uitleg en codes van sanne begreep ik een beetje hoe en wat. zelf zou ik niet uit mijn hoofd deze code geschreven kunnen hebben. Maar na de uitleg begreep ik in grote lijnen wel wat er stond en werkte het.
-  <img src="./images/screenshot_js_code_intersecting.png" width="375px" alt="javascript codes voor intersecting function">
+  <img src="./readme-images/screenshot_js_code_intersecting.png" width="375px" alt="javascript codes voor intersecting function">
 
   Op de site van D66 werken zij met een slider die te bedienen is met buttons, ik heb hiervoor met behulp van chatgpt een slider function gemaakt in JavaScript. Ik ben zelf niet goed met javascript dus ik heb chatgpt gevraagd om mij hierbij te helpen. Chatgpt schrijft een stuk geavanceerdere codes dan ik kan schrijven en zelfs kan lezen dus ik heb Jake en Sanne gevraagd mee te kijken en uitleg te geven over wat er staat en heb hierdoor nieuwe dingen geleerd zoals wat een % is. een % is een modulo, dit kijkt naar hoevaak het getal in het hele past, dat wat over blijft is de modulo. ook heb ik geleerd dat => een nieuwe manier van functies schrijven is.
 
-  <img src="./images/screenshot_js_code_slider.png" width="375px" alt="javascript codes voor slider function">
+  <img src="./readme-images/screenshot_js_code_slider.png" width="375px" alt="javascript codes voor slider function">
 
   De slider wordt op meerdere plekken gebruikt, in principe zou ik dus 1 functie kunnen schrijven voor alle sliders, sanne gaf aan dat dit bijv kan doormiddel van een object bijv. 
 
   Ook schuift de slider helemaal op als ik met de screenreader erdoor heen tab met de screenreader, ik heb met sanne overlegt hoe ik dit zou kunnen oplossen maar dit zou erg omslachtig zijn en ik wil niet aan de slag als developer dus hij adviseerde mij hier niet al te veel over in te zitten.
 
-  <img src="./images/screenshot_js_code_slider.png" width="375px alt="slider die opschuift door screenreader">
+  <img src="./readme-images/screenshot_js_code_slider.png" width="375px alt="slider die opschuift door screenreader">
 </details>
 
 

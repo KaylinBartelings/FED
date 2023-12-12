@@ -41,7 +41,8 @@ sections.forEach(section => {
 
 
 
-// hier staan alle js codes voor de slider in section 3
+
+// hier staan alle js codes voor de slider in section 3 van home page
 // code geschreven met behulp van CHATGPT
 const slider_section_3 = document.querySelector('section:nth-of-type(3) ul');
 const prevBtn_section_3 = document.querySelector('section:nth-of-type(3) button:nth-of-type(1)');
@@ -51,6 +52,7 @@ const progressBar_section_3 = document.querySelector('progress');
 
 let currentIndex_section_3 = 0;
 const sliderGap_section_3 = 35;
+
 
 const updateSlider_section_3 = () => {
     const itemWidth = slider_section_3.children[0].offsetWidth + sliderGap_section_3;
@@ -76,11 +78,50 @@ updateSlider_section_3();
 
 prevBtn_section_3.addEventListener('click', showPrev_section_3);
 nextBtn_section_3.addEventListener('click', showNext_section_3);
-// hier eindigen alle js codes voor de slider in section 3
+// hier eindigen alle js codes voor de slider in section 3 van home page
+
+
+// hier staan alle js codes voor de slider van slider-section
+// code geschreven met behulp van CHATGPT
+const slider_section = document.querySelector('.slider-section ul');
+const prevBtn_section = document.querySelector('.slider-section button:nth-of-type(1)');
+const nextBtn_section = document.querySelector('.slider-section button:nth-of-type(2)');
+const counter_section = document.querySelector('.counter');
+const progressBar_section = document.querySelector('progress');
+
+let currentIndex_section = 0;
+const sliderGap_section = 35;
+
+
+const updateSlider_section = () => {
+    const itemWidth = slider_section.children[0].offsetWidth + sliderGap_section;
+    const newPosition = -currentIndex_section * itemWidth;
+    slider_section.style.transform = `translateX(${newPosition}px)`;
+
+    // Update the progress bar
+    progressBar_section.value = ((currentIndex_section + 1) / slider_section.children.length) * 100;
+};
+
+const showPrev_section = () => {
+    currentIndex_section = (currentIndex_section - 1 + slider_section.children.length) % slider.children.length;
+    updateSlider_section();
+};
+
+const showNext_section = () => {
+    currentIndex_section = (currentIndex_section + 1) % slider_section.children.length;
+    updateSlider_section();
+};
+
+// Initial update
+updateSlider_section();
+
+prevBtn_section.addEventListener('click', showPrev_section);
+nextBtn_section.addEventListener('click', showNext_section);
+// hier eindigen alle js codes voor de slider van slider-section
 
 
 
-// hier staan alle js codes voor de slider in section 5
+// hier staan alle js codes voor de slider in section 5 van home page
 // code geschreven met behulp van CHATGPT
 const slider = document.querySelector('section:nth-of-type(5) ul');
 const prevBtn = document.querySelector('section:nth-of-type(5) button:nth-of-type(1)');
@@ -91,6 +132,8 @@ const progressBar = document.querySelector('progress');
 let currentIndex = 0;
 const sliderGap = 35;
 
+
+if(slider){
 const updateSlider = () => {
     const itemWidth = slider.children[0].offsetWidth + sliderGap;
     const newPosition = -currentIndex * itemWidth;
@@ -115,11 +158,12 @@ updateSlider();
 
 prevBtn.addEventListener('click', showPrev);
 nextBtn.addEventListener('click', showNext);
-// hier eindigen alle js codes voor de slider in section 5
+// hier eindigen alle js codes voor de slider in section 5 van home page
+}
 
 
 
-// hier staan alle js codes voor de slider in section 7
+// hier staan alle js codes voor de slider in section 7 van home page
 // code geschreven met behulp van CHATGPT
 const slider_section_7 = document.querySelector('section:nth-of-type(7) ul');
 const prevBtn_section_7 = document.querySelector('section:nth-of-type(7) button:nth-of-type(1)');
@@ -130,22 +174,23 @@ const progressBar_section_7 = document.querySelector('progress');
 let currentIndex_section_7 = 0;
 const sliderGap_section_7 = 35;
 
+if(slider){
 const updateSlider_section_7 = () => {
-    const itemWidth = slider_section_7.children[0].offsetWidth + sliderGap_section_3;
+    const itemWidth = slider_section_7.children[0].offsetWidth + sliderGap_section_7;
     const newPosition = -currentIndex_section_7 * itemWidth;
     slider_section_7.style.transform = `translateX(${newPosition}px)`;
 
     // Update the progress bar
-    progressBar_section_7.value = ((currentIndex_section_7 + 1) / slider_section_3.children.length) * 100;
+    progressBar_section_7.value = ((currentIndex_section_7 + 1) / slider_section_7.children.length) * 100;
 };
 
 const showPrev_section_7 = () => {
-    currentIndex_section_7 = (currentIndex_section_7 - 1 + slider_section_3.children.length) % slider.children.length;
+    currentIndex_section_7 = (currentIndex_section_7 - 1 + slider_section_7.children.length) % slider.children.length;
     updateSlider_section_7();
 };
 
 const showNext_section_7 = () => {
-    currentIndex_section_7 = (currentIndex_section_7 + 1) % slider_section_3.children.length;
+    currentIndex_section_7 = (currentIndex_section_7 + 1) % slider_section_7.children.length;
     updateSlider_section_7();
 };
 
@@ -154,7 +199,8 @@ updateSlider_section_7();
 
 prevBtn_section_7.addEventListener('click', showPrev_section_7);
 nextBtn_section_7.addEventListener('click', showNext_section_7);
-// hier eindigen alle js codes voor de slider in section 7
+}
+// hier eindigen alle js codes voor de slider in section 7 van home page
 
 // de codes en functies die voor de slider geschreven zijn dubbel, 
 // deze zouden ingekort kunnen worden tot één fucntion

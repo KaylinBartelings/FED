@@ -2,6 +2,9 @@ section:nth-of-type(1) {
   padding: 1em;
 }
 
+/***********/
+/* Hier staan alle codes voor section 2*/
+/***********/
 section:nth-of-type(2) {
   padding: 1em;
 }
@@ -10,7 +13,6 @@ section:nth-of-type(2) fieldset {
   display: grid;
   gap: .5em;
 }
-
 
 section:nth-of-type(2) fieldset:nth-of-type(2) {
   position: absolute;
@@ -52,7 +54,14 @@ section:nth-of-type(2) label:has(input:checked)~button {
   color: var(--beige-bg-color);
   font-weight: 600;
 }
+/***********/
+/* Hier eindigt alle codes voor section 2*/
+/***********/
 
+
+/***********/
+/* Hier staat alle codes voor section 3*/
+/***********/
 section:nth-of-type(3) {
   background: var(--main-bg-color);
 }
@@ -100,13 +109,19 @@ section:nth-of-type(3) button {
   color: var(--black-color);
 }
 
-
 section:nth-of-type(3) a::before {
   content: " →";
   font-family: sans-serif;
   padding-right: 1em;
 }
+/***********/
+/* Hier eindigt alle codes voor section 3*/
+/***********/
 
+
+/***********/
+/* Hier staat alle codes voor section 4*/
+/***********/
 section:nth-of-type(4) {
   background: var(--blue-bg-color);
 }
@@ -169,7 +184,13 @@ section:nth-of-type(4) button {
   margin-bottom: 2em;
   justify-self: start;
 }
+/***********/
+/* Hier eindigt alle codes voor section 4*/
+/***********/
 
+/***********/
+/* Hier staat alle codes voor section 5*/
+/***********/
 section:nth-of-type(5) {
   background: var(--green-bg-color);
   display: flex;
@@ -183,13 +204,6 @@ section:nth-of-type(5) h2 {
 }
 
 section:nth-of-type(5) ul {
-  /* display: flex;
-  overflow: auto;
-  gap: 1em;
-  order: 2;
-  scroll-snap-type: x mandatory;
-  overscroll-behavior-x: contain; */
-
   display: flex;
   transition: transform 0.5s ease;
 
@@ -207,7 +221,6 @@ section:nth-of-type(5) ul li {
   flex-shrink: 0;
   width: 17.5em;
   scroll-snap-stop: always;
-  /* scroll-snap-align: center; */
   scroll-snap-align: start;
 }
 
@@ -237,7 +250,6 @@ section:nth-of-type(5) ul li img {
   border-radius: .25em;
 }
 
-
 section:nth-of-type(5) ul li h3 {
   order: 2;
   position: relative;
@@ -256,8 +268,13 @@ section:nth-of-type(5) button {
   background: transparent;
   color: var(--black-color);
 }
+/***********/
+/* Hier eindigt alle codes voor section 5*/
+/***********/
 
-
+/***********/
+/* Hier staat alle codes voor section 6*/
+/***********/
 section:nth-of-type(6) {
   background-color: var(--beige-bg-color);
 }
@@ -301,50 +318,40 @@ section:nth-of-type(6) ul li img {
 section:nth-of-type(6) ul li a {
   order: 6;
 }
+/***********/
+/* Hier eindigt alle codes voor section 6*/
+/***********/
 
-ul li a span {
-  background-color: black;
-  color: white;
-  padding: 1em 1.5em 1em 2.5em;
-  border-radius: 0.5em;
-}
-
+/***********/
+/* Hier staat alle codes voor section 7*/
+/***********/
 section:nth-of-type(7) {
   background-color: var(--yellow-bg-color);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 0.3em;
 }
 
 section:nth-of-type(7) h2 {
   margin-bottom: 1em;
 }
 
-section:nth-of-type(7) ul {
-  /* display: flex;
-  overflow: auto;
-  gap: 1.5em;
-  margin: 0 -2.2em;
-  padding: 0 2.2em;
-  scroll-snap-type: x mandatory;
-  overscroll-behavior-x: contain;
-  margin-top: 2em; */
-
+.slider-section ul {
   display: flex;
   transition: transform 0.5s ease;
-
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  /* white-space: nowrap; */
   scroll-behavior: smooth;
   overflow: visible;
   gap: 2.18em;
-
   margin-bottom: 2em;
 }
 
-section:nth-of-type(7) ul li {
+.slider-section ul li {
   flex-shrink: 0;
   padding: .625em;
-  /* height: 100%; */
   width: 17.5em;
   background-color: var(--blue-bg-color);
   border-radius: .5em;
@@ -355,37 +362,43 @@ section:nth-of-type(7) ul li {
   max-height: 35em;
 }
 
-section:nth-of-type(7) ul li p:nth-of-type(1) {
+.slider-section ul li p:nth-of-type(1) {
   order: 1;
 }
 
-section:nth-of-type(7) ul li p:nth-of-type(2) {
+.slider-section ul li p:nth-of-type(2) {
   order: 3;
   margin-bottom: 7em;
 }
 
-section:nth-of-type(7) ul li h3 {
+.slider-section ul li h3 {
   order: 2;
 }
 
-section:nth-of-type(7) ul li a {
+.slider-section ul li a {
   order: 4;
 }
 
-section:nth-of-type(7) button {
+.slider-section button {
   background: transparent;
   color: var(--black-color);
 }
 
-
-section:nth-of-type(7) ul li:nth-of-type(2) {
+.slider-section ul li:nth-of-type(2) {
   background-color: var(--green-bg-color);
 }
 
-section:nth-of-type(7) ul li:nth-of-type(3) {
+.slider-section ul li:nth-of-type(3) {
   background-color: var(--main-bg-color);
 }
+/***********/
+/* Hier eindigt alle codes voor section 7*/
+/***********/
 
+
+/***********/
+/* Hier staat alle codes voor section 8*/
+/***********/
 section:nth-of-type(8) {
   background-color: var(--yellow-bg-color);
 }
@@ -484,7 +497,14 @@ section:nth-of-type(8) button {
   margin-bottom: 2em;
   justify-self: start;
 }
+/***********/
+/* Hier eindigt alle codes voor section 8*/
+/***********/
 
+
+/***********/
+/* Hier staat alle codes voor het veranderen van de achtergond kleur van de section*/
+/***********/
 section:nth-of-type(1).inBeeld {
   background-color: var(--main-bg-color);
 }

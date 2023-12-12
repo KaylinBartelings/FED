@@ -10,6 +10,10 @@
     --black-color: #000;
     --grey-color: #e2e2e2;
     --dark-grey-color: #2b2b2b;
+    --pink-color: #E35B6D;
+    --red-color: #cf2e2e;
+
+    --high-contrast-pink: #FF00FF;
 
     /* colors voor achtergrond*/
     --main-bg-color: #9D8FC4;
@@ -52,7 +56,7 @@
     }
 
     section:nth-of-type(6) ul li,
-    section:nth-of-type(7) ul li {
+    section:nth-of-type(7) ul li, .slider-section ul li {
         background-color: var(--dark-grey-color) !important;
     }
 
@@ -60,11 +64,18 @@
     footer img {
         filter: invert(1);
     }
+  
 
 }
 
 /***********/
-/* Hier staan alle codes voor de hoog contrast*/
+/* Hier eindigen alle codes voor de darkmode function*/
+/***********/
+
+
+
+/***********/
+/* Hier staan alle codes voor de hhoogcontrast mode*/
 /***********/
 @media (prefers-contrast: more) {
     :root {
@@ -78,20 +89,20 @@
     }
 
     label {
-        border: solid 0.15em #FF00FF !important;
+        border: solid 0.15em var(--high-contrast-pink) !important;
     }
 
     section:nth-of-type(2) label:has(input:checked) {
-        background-color: #FF00FF !important;
+        background-color: var(--high-contrast-pink) !important;
     }
 
     button {
-        background-color: #FF00FF !important;
+        background-color: var(--high-contrast-pink) !important;
         color: var(--black-color) !important;
     }
 
     a span {
-        background-color: #FF00FF !important;
+        background-color: var(--high-contrast-pink) !important;
     }
 
     section:nth-of-type(4) fieldset:nth-of-type(2) label {
@@ -99,7 +110,7 @@
     }
 
     select {
-        border: solid 0.15em #FF00FF !important;
+        border: solid 0.15em var(--high-contrast-pink) !important;
     }
 
     section:nth-of-type(6) ul li,
@@ -113,16 +124,29 @@
     }
 
     input {
-        border-bottom: solid 0.2em #FF00FF !important;
+        border-bottom: solid 0.2em var(--high-contrast-pink) !important;
     }
 
     section:nth-of-type(8) fieldset label {
         border: none !important;
     }
+
+    details {
+        border-bottom: solid .15em var(--high-contrast-pink)!important;
+    }
+
+    footer summary {
+        color: var(--white-color)!important;
+    }
 }
 
 /***********/
-/* Hier staan alle codes voor de typografie*/
+/* Hier eindigen alle codes voor de hoogcontrast mode*/
+/***********/
+
+
+/***********/
+/* Hier eindigen alle codes voor het inladen de typografie*/
 /***********/
 @font-face {
     font-family: Inter;
@@ -143,7 +167,7 @@
 }
 
 /***********/
-/* Hier eindigen alle codes voor de typografie*/
+/* Hier eindigen alle codes voor het inladen de typografie*/
 /***********/
 
 html {
@@ -158,6 +182,10 @@ body {
     overflow-x: hidden;
 }
 
+section {
+    padding: 3.75em 2.2em;
+    transition: 2s ease-in-out;
+}
 
 /***********/
 /* Hier staan alle codes voor de styling van de typografie*/
@@ -198,15 +226,6 @@ a {
     width: fit-content;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-span:hover {
-    background-color: #FF00FF;
-}
-
-
 p {
     font-size: var(--body-text);
     color: var(--black-color);
@@ -214,27 +233,49 @@ p {
     line-height: 1.75em;
 }
 
+span {
+    font-family: sans-serif;
+}
+
+strong {
+    color: var(--black-color);
+}
+
+figcaption {
+    color: var(--black-color);
+}
+
 /***********/
 /* Hier eindigen alle codes voor de styling van de typografie*/
 /***********/
 
-span {
-    font-family: sans-serif;
+
+/***********/
+/* Hier staan alle codes voor de styling van de lijsten*/
+/***********/
+ul {
+    list-style: none;
 }
 
 li {
     font-weight: 400;
 }
 
-button {
-    border: none;
-    font-size: var(--body-large);
+ul li a span {
+    background-color: black;
+    color: white;
+    padding: 1em 1.5em 1em 2.5em;
+    border-radius: 0.5em;
 }
 
-ul {
-    list-style: none;
-}
+/***********/
+/* Hier eindigen alle codes voor de styling van de lijsten*/
+/***********/
 
+
+/***********/
+/* Hier staat alle codes voor de styling van de beeld materiaal*/
+/***********/
 img {
     width: 100%;
     height: auto;
@@ -247,11 +288,6 @@ video {
     aspect-ratio: 16/9;
     object-fit: cover;
     margin-bottom: 1em;
-}
-
-progress {
-    width: 70%;
-    height: .5em;
 }
 
 figcaption {
@@ -274,9 +310,18 @@ figcaption::before {
     margin-right: 1em;
 }
 
-section {
-    padding: 3.75em 2.2em;
-    transition: 2s ease-in-out;
+/***********/
+/* Hier eindigen alle codes voor de styling van de beeld materiaal*/
+/***********/
+
+button {
+    border: none;
+    font-size: var(--body-large);
+}
+
+progress {
+    width: 70%;
+    height: .5em;
 }
 
 label {
@@ -296,6 +341,10 @@ fieldset {
     border: none;
 }
 
+/***********/
+/* Hier staat de code voor de visueel hidden van elementeen */
+/***********/
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
@@ -305,3 +354,88 @@ fieldset {
     white-space: nowrap;
     width: 1px;
 }
+
+/***********/
+/* Hier staan alle codes voor de styling van de de states voor links */
+/***********/
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus-visible {
+    outline: solid .2em var(--black-color);
+    outline-offset: .2em;
+}
+
+a:active {
+    color: var(--dark-grey-color);
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+/***********/
+/* Hier eindigen alle codes voor de styling van de de states voor links */
+/***********/
+
+a span:hover {
+background: var(--pink-color);
+}
+
+
+/***********/
+/* Hier staan alle codes voor de styling van de de states voor buttons */
+/***********/
+
+button:hover {
+    background-color: var(--pink-color);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    background: var(--white-color);
+    color: var(--black-color);
+}
+
+button:visited {
+    color: var(--red-color);
+}
+
+button:disabled {
+    background-color: var(--grey-color);
+    color: var(--dark-grey-color);
+    cursor: not-allowed;
+}
+
+
+button[type="submit"]:hover {
+    background-color: var(--pink-color);
+}
+
+button[type="submit"]:focus {
+    outline: none;
+}
+
+button[type="submit"]:active {
+    background: var(--white-color);
+    color: var(--black-color);
+}
+
+button[type="submit"]:visited {
+    color: var(--red-color);
+}
+
+button[type="submit"]:disabled {
+    background-color: var(--grey-color);
+    color: var(--dark-grey-color);
+    cursor: not-allowed;
+}
+
+/***********/
+/* Hier eindigen alle codes voor de styling van de de states voor buttons */
+/***********/

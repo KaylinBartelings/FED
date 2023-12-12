@@ -2,9 +2,15 @@ body {
     background: var(--beige-bg-color);
 }
 
-
 section:nth-of-type(2) p {
     font-weight: 500;
+    margin-bottom: 1.5em;
+}
+
+section:nth-of-type(2) section {
+    background-color: var(--yellow-bg-color);
+    transform: translateX(-2.2em);
+    width: calc(100% + 4.4em);
 }
 
 section:nth-of-type(2) p:nth-of-type(2) {
@@ -15,20 +21,17 @@ section:nth-of-type(2) p:is( :nth-of-type(2), :nth-of-type(3), :nth-of-type(4)) 
     margin-bottom: 2em;
 }
 
-section:nth-of-type(2) h3 {
+section:nth-of-type(2) section h3 {
     margin-bottom: 0.7em;
-    border-bottom: solid 0.1em var(--black-color);
 }
 
-section:nth-of-type(2) {
-    background: var(--yellow-bg-color);
+section:nth-of-type(2) section ul {
+    padding: 1em 0;
+    border-top: solid 0.15em var(--black-color);
+    border-bottom: solid 0.15em var(--black-color);
+    margin-bottom: 2em;
 }
 
-section:nth-of-type(2) ul {
-    margin-left: -2.2em;
-    width: calc(100% + 4.4em);
-    padding: 2.2em;
-}
 
 section:nth-of-type(2) ul:nth-of-type(2) {
     background-color: transparent;
@@ -37,9 +40,15 @@ section:nth-of-type(2) ul:nth-of-type(2) {
     border-radius: .5em;
     height: fit-content;
     padding: .8em;
-    margin-bottom: 5em;
     width: fit-content;
+    margin: 0;
 }
+
+section:nth-of-type(2) section p a {
+    font-size: .8em;
+    font-weight: 500;
+}
+
 
 section:nth-of-type(2) ul:nth-of-type(2) li:not(:last-of-type)::after {
     content: "";
@@ -60,8 +69,7 @@ section:nth-of-type(2) ul li label {
 }
 
 details {
-    font-size: 1.5em;
-    padding: 1em 0;
+    font-size: 1.2em;
     font-weight: 600;
     border-bottom: .15em solid var(--black-color);
     transition: .3s ease-in;
@@ -75,6 +83,7 @@ details[open] {
 
 summary {
     list-style: none;
+    color: var(--black-color);
 }
 
 details p {
@@ -97,8 +106,8 @@ summary {
 summary::after {
     content: "";
     background-image:
-        linear-gradient(black 0 0),
-        linear-gradient(black 0 0);
+        linear-gradient(var(--black-color) 0 0),
+        linear-gradient(var(--black-color) 0 0);
     background-size:
         30% 5%,
         5% 30%;
@@ -135,18 +144,38 @@ section:nth-of-type(2) div img {
     object-fit: cover;
 }
 
-section:nth-of-type(3) ul {
+.slider-section {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0 0.3em;
+}
+
+.slider-section ul {
+    /* display: flex;
     overflow: auto;
     gap: 1.5em;
     margin: 0 -2.2em;
     padding: 0 2.2em;
     scroll-snap-type: x mandatory;
     overscroll-behavior-x: contain;
-    margin-top: 2em;
-}
-
-section:nth-of-type(3) ul li {
+    margin-top: 2em; */
+  
+    display: flex;
+    transition: transform 0.5s ease;
+  
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    /* white-space: nowrap; */
+    scroll-behavior: smooth;
+    overflow: visible;
+    gap: 2.18em;
+  
+    margin-bottom: 2em;
+  }
+  
+  .slider-section ul li {
     flex-shrink: 0;
     padding: .625em;
     /* height: 100%; */
@@ -158,33 +187,43 @@ section:nth-of-type(3) ul li {
     scroll-snap-align: center;
     height: 35em;
     max-height: 35em;
-}
-
-section:nth-of-type(3) ul li p:nth-of-type(1) {
+  }
+  
+  .slider-section ul li p:nth-of-type(1) {
     order: 1;
-}
-
-section:nth-of-type(3) ul li p:nth-of-type(2) {
+  }
+  
+  .slider-section ul li p:nth-of-type(2) {
     order: 3;
     margin-bottom: 7em;
-}
+  }
 
-section:nth-of-type(3) ul li h3 {
+  .slider-section h2 {
+    margin-bottom: 2em;
+  }
+  
+  .slider-section ul li h3 {
     order: 2;
-}
-
-section:nth-of-type(3) ul li a {
+    margin-bottom: 1em;
+  }
+  
+  .slider-section ul li a {
     order: 4;
-}
-
-
-section:nth-of-type(3) ul li:nth-of-type(2) {
+  }
+  
+  .slider-section button {
+    background: transparent;
+    color: var(--black-color);
+  }
+  
+  
+  .slider-section ul li:nth-of-type(2) {
     background-color: var(--green-bg-color);
-}
-
-section:nth-of-type(3) ul li:nth-of-type(3) {
+  }
+  
+  .slider-section ul li:nth-of-type(3) {
     background-color: var(--main-bg-color);
-}
+  }
 
 section:nth-of-type(4) h2 {
     margin-bottom: 1em;
