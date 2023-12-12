@@ -47,15 +47,17 @@
         --yellow-bg-color: var(--dark-grey-bg-color);
         --black-color: #fff;
         --white-color: #000;
-        --grey-color:var(--dark-grey-color);
+        --grey-color: var(--dark-grey-color);
 
     }
 
-    section:nth-of-type(6) ul li, section:nth-of-type(7) ul li {
+    section:nth-of-type(6) ul li,
+    section:nth-of-type(7) ul li {
         background-color: var(--dark-grey-color) !important;
     }
 
-    section:nth-of-type(8) img, footer img{
+    section:nth-of-type(8) img,
+    footer img {
         filter: invert(1);
     }
 
@@ -85,7 +87,7 @@
 
     button {
         background-color: #FF00FF !important;
-        color: var(--black-color)!important;
+        color: var(--black-color) !important;
     }
 
     a span {
@@ -93,23 +95,25 @@
     }
 
     section:nth-of-type(4) fieldset:nth-of-type(2) label {
-        border: none!important;
+        border: none !important;
     }
 
     select {
         border: solid 0.15em #FF00FF !important;
     }
 
-    section:nth-of-type(6) ul li, section:nth-of-type(7) ul li {
+    section:nth-of-type(6) ul li,
+    section:nth-of-type(7) ul li {
         background-color: var(--dark-grey-color) !important;
     }
 
-    section:nth-of-type(8) img, footer img{
+    section:nth-of-type(8) img,
+    footer img {
         filter: invert(1);
     }
 
     input {
-        border-bottom: solid 0.2em #FF00FF!important;
+        border-bottom: solid 0.2em #FF00FF !important;
     }
 
     section:nth-of-type(8) fieldset label {
@@ -188,9 +192,20 @@ h3 {
 }
 
 a {
-    color: var(--white-color);
+    color: var(--black-color);
     text-decoration: none;
+    font-weight: 700;
+    width: fit-content;
 }
+
+a:hover {
+    text-decoration: underline;
+}
+
+span:hover {
+    background-color: #FF00FF;
+}
+
 
 p {
     font-size: var(--body-text);
@@ -218,11 +233,6 @@ button {
 
 ul {
     list-style: none;
-}
-
-a {
-    color: var(--black-color);
-    font-weight: 700;
 }
 
 img {

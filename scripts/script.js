@@ -169,6 +169,7 @@ footerBtn.addEventListener('click', () => {
     footerBtn.classList.toggle('buttonToggle');
     footer.classList.toggle('footerOpen');
 });
+
 // hier eindigen alle js codes voor de footer
 
 
