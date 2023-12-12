@@ -43,8 +43,8 @@ nav button::before{
     justify-content: center;
     align-items: center;
     width: 1.5em;
-    aspect-ratio: 1;
-    rotate: 45deg;
+    aspect-ratio: 1 /1 ;
+    transform:rotate(45deg);
 }
 
 nav {

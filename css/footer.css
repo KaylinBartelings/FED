@@ -90,7 +90,7 @@ footer button {
     justify-content: center;
     align-items: center;
     width: 1.5em;
-    aspect-ratio: 1;
+    aspect-ratio: 1 / 1;
     border: solid .1em var(--white-color);
     border-radius: 50%;
 }
@@ -132,6 +132,7 @@ footer summary {
     align-items: center;
     margin-bottom: 1em;
     list-style: none;
+    color: var(--white-color);
 }
 
 footer summary::after {
@@ -148,7 +149,7 @@ footer summary::after {
     justify-content: center;
     align-items: center;
     width: 1.5em;
-    aspect-ratio: 1;
+    aspect-ratio: 1 / 1;
     border: solid .1em var(--white-color);
     border-radius: 50%;
     margin-left: 1em;

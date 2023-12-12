@@ -2,6 +2,9 @@ body {
     background: var(--beige-bg-color);
 }
 
+/***********/
+/* Hier staan alle codes voor section 2*/
+/***********/
 section:nth-of-type(2) p {
     font-weight: 500;
     margin-bottom: 1.5em;
@@ -68,6 +71,24 @@ section:nth-of-type(2) ul li label {
     font-size: .8em;
 }
 
+section:nth-of-type(2) div img {
+    width: 40px;
+    height: 60px;
+    object-fit: cover;
+}
+
+blockquote p {
+    margin-bottom: 2em;
+}
+
+/***********/
+/* Hier eindigen alle codes voor section 2*/
+/***********/
+
+
+/***********/
+/* Hier staan alle codes voor de accordion*/
+/***********/
 details {
     font-size: 1.2em;
     font-weight: 600;
@@ -117,33 +138,25 @@ summary::after {
     justify-content: center;
     align-items: center;
     width: 1.5em;
-    aspect-ratio: 1;
+    aspect-ratio: 1 / 1;
     border: solid .1em var(--black-color);
     border-radius: 50%;
-
-    /* transition: 3s; */
 }
 
 details[open] summary::after {
     content: "";
-    background-image:
-        linear-gradient(black 0 0);
-    background-size:
-        30% 5%;
+    background-image: linear-gradient(var(--black-color) 0 0);
+    background-size: 30% 5%;
 }
 
-div:has(img) {
-    gap: 1em;
-    display: flex;
-    align-items: start;
-}
+/***********/
+/* Hier eindigen alle codes voor de accordion*/
+/***********/
 
-section:nth-of-type(2) div img {
-    width: 40px;
-    height: 60px;
-    object-fit: cover;
-}
 
+/***********/
+/* Hier staan alle codes voor de slider section*/
+/***********/
 .slider-section {
     display: flex;
     flex-wrap: wrap;
@@ -152,30 +165,20 @@ section:nth-of-type(2) div img {
 }
 
 .slider-section ul {
-    /* display: flex;
-    overflow: auto;
-    gap: 1.5em;
-    margin: 0 -2.2em;
-    padding: 0 2.2em;
-    scroll-snap-type: x mandatory;
-    overscroll-behavior-x: contain;
-    margin-top: 2em; */
-  
     display: flex;
     transition: transform 0.5s ease;
-  
+
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    /* white-space: nowrap; */
     scroll-behavior: smooth;
     overflow: visible;
     gap: 2.18em;
-  
+
     margin-bottom: 2em;
-  }
-  
-  .slider-section ul li {
+}
+
+.slider-section ul li {
     flex-shrink: 0;
     padding: .625em;
     /* height: 100%; */
@@ -187,43 +190,43 @@ section:nth-of-type(2) div img {
     scroll-snap-align: center;
     height: 35em;
     max-height: 35em;
-  }
-  
-  .slider-section ul li p:nth-of-type(1) {
+}
+
+.slider-section ul li p:nth-of-type(1) {
     order: 1;
-  }
-  
-  .slider-section ul li p:nth-of-type(2) {
+}
+
+.slider-section ul li p:nth-of-type(2) {
     order: 3;
     margin-bottom: 7em;
-  }
+}
 
-  .slider-section h2 {
+.slider-section h2 {
     margin-bottom: 2em;
-  }
-  
-  .slider-section ul li h3 {
+}
+
+.slider-section ul li h3 {
     order: 2;
     margin-bottom: 1em;
-  }
-  
-  .slider-section ul li a {
+}
+
+.slider-section ul li a {
     order: 4;
-  }
-  
-  .slider-section button {
+}
+
+.slider-section button {
     background: transparent;
     color: var(--black-color);
-  }
-  
-  
-  .slider-section ul li:nth-of-type(2) {
+}
+
+
+.slider-section ul li:nth-of-type(2) {
     background-color: var(--green-bg-color);
-  }
-  
-  .slider-section ul li:nth-of-type(3) {
+}
+
+.slider-section ul li:nth-of-type(3) {
     background-color: var(--main-bg-color);
-  }
+}
 
 section:nth-of-type(4) h2 {
     margin-bottom: 1em;
@@ -251,6 +254,6 @@ section:nth-of-type(4) ul li a span {
     padding: .3em;
 }
 
-blockquote p {
-    margin-bottom: 2em;
-}
+/***********/
+/* Hier eindigen alle codes voor de slider section*/
+/***********/

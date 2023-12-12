@@ -260,6 +260,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Ook schuift de slider helemaal op als ik met de screenreader erdoor heen tab met de screenreader, ik heb met sanne overlegt hoe ik dit zou kunnen oplossen maar dit zou erg omslachtig zijn en ik wil niet aan de slag als developer dus hij adviseerde mij hier niet al te veel over in te zitten.
 
   <img src="./readme-images/screenshot_slider_bug.png" width="375px" alt="slider die opschuift door screenreader">
+
+  Daarnaast heb ik geprobeerd een hoog contrast mode te maken, deze is gelukt maar hier ben ik niet geheel tevreden over, ik vind het lastig om te kijken welke keuren ik hiervoor moet gebruiken en dit goed toe te passen. hier valt voor mij zeker nog veel te leren, niet alleen voor het schrijven van codes want ik weet nu hoe de codes voor hoog contrast werken maar meer als designer hoe ik om moet gaan met deze beperking.
+
+  <img src="./readme-images/screenshot_hoog_contrast.png" width="375px" alt="slider die opschuift door screenreader">
+
 </details>
 
 
